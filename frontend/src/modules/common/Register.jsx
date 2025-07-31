@@ -32,7 +32,7 @@ const Register = () => {
     e.preventDefault()
     if (!data?.name || !data?.email || !data?.password||! data?.type ) return alert("Please fill all fields");
     else {
-      axios.post('http://localhost:8001/api/user/register', data)
+      axios.post('https://h0use-hunt.onrender.com/api/user/register', data)
         .then((response) => {
           if (response.data.success) {
             message.success(response.data.message);
