@@ -34,7 +34,7 @@ const AllProperty = () => {
 
    const handleStatus = async (bookingId, propertyId, status) => {
       try {
-         const res = await axios.post('http://localhost:8001/api/owner/handlebookingstatus', { bookingId, propertyId, status }, {
+         const res = await axios.post('https://h0use-hunt.onrender.com/api/owner/handlebookingstatus', { bookingId, propertyId, status }, {
             headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` }
          })
          if (res.data.success) {
