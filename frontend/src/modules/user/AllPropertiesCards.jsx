@@ -42,7 +42,7 @@ const AllPropertiesCards = ({ loggedIn }) => {
   const handleBooking = async (status, propertyId, ownerId) => {
     try {
       const res = await axios.post(
-        `http://localhost:8001/api/user/bookinghandle/${propertyId}`,
+        `https://h0use-hunt.onrender.com/api/user/bookinghandle/${propertyId}`,
         { userDetails, status, ownerId },
         {
           headers: {
