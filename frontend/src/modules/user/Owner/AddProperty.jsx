@@ -50,7 +50,7 @@ function AddProperty() {
          }
       }
 
-      axios.post('http://localhost:8001/api/owner/postproperty', formData, {
+      axios.post('https://h0use-hunt.onrender.com/api/owner/postproperty', formData, {
          headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
             'Content-Type': 'multipart/form-data',
