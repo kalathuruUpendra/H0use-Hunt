@@ -31,7 +31,7 @@ const EnhancedAllPropertiesCards = ({ loggedIn }) => {
   const getAllProperties = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:8001/api/user/getAllProperties');
+      const res = await axios.get('https://h0use-hunt.onrender.com/api/user/getAllProperties');
       setAllProperties(res.data.data);
     } catch (error) {
       console.error(error);
