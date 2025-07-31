@@ -36,7 +36,7 @@ const AllUsers = () => {
 
    const handleStatus = async (userid, status) => {
       try {
-         await axios.post('http://localhost:8001/api/admin/handlestatus', { userid, status }, {
+         await axios.post('https://h0use-hunt.onrender.com/api/admin/handlestatus', { userid, status }, {
             headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` }
          }).then((res) => {
             if (res.data.success) {
