@@ -15,7 +15,7 @@ const AllBookings = () => {
 
    const getAllBooking = async () => {
       try {
-         const response = await axios.get('http://localhost:8001/api/admin/getallbookings', {
+         const response = await axios.get('https://h0use-hunt.onrender.com/api/admin/getallbookings', {
             headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` }
          });
 
