@@ -17,10 +17,24 @@ const PORT = process.env.PORT || 8001;
 
 
 app.use(express.json());
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://househuntu.netlify.app/'  // replace with your real Netlify URL
+];
+
 app.use(cors({
-  origin:'http://localhost:3000',
-  methods:['GET','POST']
+  origin: function (origin, callback) {
+    // allow requests with no origin like mobile apps or curl requests
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('CORS not allowed from this origin'));
+    }
+  },
+  methods: ['GET', 'POST']
 }));
+
 
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
