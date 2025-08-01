@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8001;
 app.use(express.json());
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://househuntu.netlify.app/'  // replace with your real Netlify URL
+  'https://688c368f1d9c62ad63a9a6d5--househuntu.netlify.app'  // replace with your real Netlify URL
 ];
 
 app.use(cors({
