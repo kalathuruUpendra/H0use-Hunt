@@ -32,7 +32,7 @@ const Login = () => {
     if (!data?.email || !data?.password) {
       return alert("Please fill all fields");
     } else {
-      axios.post('http://localhost:8001/api/user/login', data)
+      axios.post('https://h0use-hunt.onrender.com/api/user/login', data)
         .then((res) => {
           if (res.data.success) {
             message.success(res.data.message);
