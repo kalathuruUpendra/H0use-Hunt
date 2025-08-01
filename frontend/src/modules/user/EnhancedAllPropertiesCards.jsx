@@ -195,7 +195,7 @@ const EnhancedAllPropertiesCards = ({ loggedIn }) => {
             >
               <div style={{ position: 'relative', overflow: 'hidden' }}>
                 <motion.img
-                  src={`http://localhost:8001${property.propertyImage[0]?.path}`}
+                  src={`https://h0use-hunt.onrender.com${property.propertyImage[0]?.path}`}
                   alt="Property"
                   style={{ 
                     width: '100%',
@@ -355,7 +355,7 @@ const EnhancedAllPropertiesCards = ({ loggedIn }) => {
                     {property.propertyImage.map((img, idx) => (
                       <Carousel.Item key={idx}>
                         <img
-                          src={`http://localhost:8001${img.path}`}
+                          src={`https://h0use-hunt.onrender.com${img.path}`}
                           alt={`Property ${idx + 1}`}
                           className="d-block w-100"
                           style={{ 
