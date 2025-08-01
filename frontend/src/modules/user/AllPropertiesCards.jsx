@@ -117,7 +117,7 @@ const AllPropertiesCards = ({ loggedIn }) => {
               <Card className="h-100 shadow-sm">
                 <Card.Img
                   variant="top"
-                  src={`http://localhost:8001${property.propertyImage[0]?.path}`}
+                  src={`https://h0use-hunt.onrender.com${property.propertyImage[0]?.path}`}
                   alt="Property"
                   style={{ height: '180px', objectFit: 'cover' }}
                 />
@@ -148,7 +148,7 @@ const AllPropertiesCards = ({ loggedIn }) => {
                               {property.propertyImage.map((img, idx) => (
                                 <Carousel.Item key={idx}>
                                   <img
-                                    src={`http://localhost:8001${img.path}`}
+                                    src={`https://h0use-hunt.onrender.com${img.path}`}
                                     alt={`Property ${idx + 1}`}
                                     className="d-block w-100"
                                     style={{ height: '300px', objectFit: 'cover' }}
