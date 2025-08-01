@@ -6,7 +6,7 @@ import { UserContext } from '../../../App';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
+//import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import AllPropertiesCards from '../AllPropertiesCards';
 import AllProperty from './AllProperties';
