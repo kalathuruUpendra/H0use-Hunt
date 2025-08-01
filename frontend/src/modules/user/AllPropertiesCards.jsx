@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import { Button, Card, Modal, Carousel, Col, Form, InputGroup, Row, Spinner, Container } from 'react-bootstrap';
+import { Button, Card, Modal, Carousel, Col, Form, Row, Spinner, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { message } from 'antd';
 
