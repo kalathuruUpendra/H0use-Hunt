@@ -59,9 +59,6 @@ const Login = () => {
                 navigate("/login");
                 break;
             }
-            setTimeout(()=>{
-              window.location.reload()
-            },1000)
           } else {
             message.error(res.data.message);
           }
