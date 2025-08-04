@@ -159,6 +159,10 @@ const Home = () => {
                       src={p1}
                       alt="Luxury Modern Properties"
                       style={{
+                         width: '100%',
+                         height: 'auto',
+                         maxHeight: '80vh',
+                         objectFit: 'cover',
                         filter: 'brightness(1)',
                         transition: 'transform 8s ease-in-out'
                       }}
@@ -167,17 +171,24 @@ const Home = () => {
                       className="content-home"
                       style={{
                         position: 'absolute',
-                        top: 0,
-                        right: 0,
-                        height: '100%',
-                        width: '55%',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'flex-end',
-                        justifyContent: 'flex-start',
-                        padding: '60px 60px 0 0',
-                        zIndex: 2,
-                        pointerEvents: 'none'
+                          top: 0,
+                          right: 0,
+                          height: '100%',
+                          width: '55%',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'flex-end',
+                          justifyContent: 'flex-start',
+                          padding: '60px 60px 0 0',
+                          zIndex: 2,
+                          pointerEvents: 'none',
+                          ...(window.innerWidth < 768 ? {
+                            width: '100%',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            padding: '30px 20px 0 20px',
+                            textAlign: 'center'
+                          } : {})
                       }}
                     >
                       <p style={{
@@ -226,6 +237,10 @@ const Home = () => {
                       src={p2}
                       alt="Premium Real Estate"
                       style={{
+                         width: '100%',
+                         height: 'auto',
+                         maxHeight: '80vh',
+                         objectFit: 'cover',
                         filter: 'brightness(0.8)',
                         transition: 'transform 8s ease-in-out'
                       }}
@@ -233,18 +248,25 @@ const Home = () => {
                     <div
                       className="content-home"
                       style={{
-                        position: 'absolute',
-                        top: 0,
-                        right: 0,
-                        height: '100%',
-                        width: '55%',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'flex-end',
-                        justifyContent: 'flex-start',
-                        padding: '60px 60px 0 0',
-                        zIndex: 2,
-                        pointerEvents: 'none'
+                       position: 'absolute',
+  top: 0,
+  right: 0,
+  height: '100%',
+  width: '55%',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-end',
+  justifyContent: 'flex-start',
+  padding: '60px 60px 0 0',
+  zIndex: 2,
+  pointerEvents: 'none',
+  ...(window.innerWidth < 768 ? {
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '30px 20px 0 20px',
+    textAlign: 'center'
+  } : {})
                       }}
                     >
                       <p style={{
@@ -293,6 +315,10 @@ const Home = () => {
                       src={p3}
                       alt="Modern Architecture"
                       style={{
+                         width: '100%',
+                         height: 'auto',
+                         maxHeight: '80vh',
+                         objectFit: 'cover',
                         filter: 'brightness(0.8)',
                         transition: 'transform 8s ease-in-out'
                       }}
@@ -301,17 +327,24 @@ const Home = () => {
                       className="content-home"
                       style={{
                         position: 'absolute',
-                        top: 0,
-                        right: 0,
-                        height: '100%',
-                        width: '55%',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'flex-end',
-                        justifyContent: 'flex-start',
-                        padding: '60px 60px 0 0',
-                        zIndex: 2,
-                        pointerEvents: 'none'
+  top: 0,
+  right: 0,
+  height: '100%',
+  width: '55%',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-end',
+  justifyContent: 'flex-start',
+  padding: '60px 60px 0 0',
+  zIndex: 2,
+  pointerEvents: 'none',
+  ...(window.innerWidth < 768 ? {
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '30px 20px 0 20px',
+    textAlign: 'center'
+  } : {})
                       }}
                     >
                       <p style={{
@@ -360,6 +393,10 @@ const Home = () => {
                       src={p4}
                       alt="Exclusive Properties"
                       style={{
+                         width: '100%',
+                         height: 'auto',
+                         maxHeight: '80vh',
+                         objectFit: 'cover',
                         filter: 'brightness(0.8)',
                         transition: 'transform 8s ease-in-out'
                       }}
@@ -368,17 +405,24 @@ const Home = () => {
                       className="content-home"
                       style={{
                         position: 'absolute',
-                        top: 0,
-                        right: 0,
-                        height: '100%',
-                        width: '55%',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'flex-end',
-                        justifyContent: 'flex-start',
-                        padding: '60px 60px 0 0',
-                        zIndex: 2,
-                        pointerEvents: 'none'
+  top: 0,
+  right: 0,
+  height: '100%',
+  width: '55%',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-end',
+  justifyContent: 'flex-start',
+  padding: '60px 60px 0 0',
+  zIndex: 2,
+  pointerEvents: 'none',
+  ...(window.innerWidth < 768 ? {
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '30px 20px 0 20px',
+    textAlign: 'center'
+  } : {})
                       }}
                     >
                       <p style={{
