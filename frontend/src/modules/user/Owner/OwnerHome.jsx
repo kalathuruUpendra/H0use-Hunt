@@ -132,45 +132,44 @@ const OwnerHome = () => {
         padding: { xs: 2, md: 4 },
         minHeight: '70vh'
       }}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 2 }}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="owner tabs"
-            textColor="primary"
-            indicatorColor="primary"
-            sx={{
-              '& .MuiTab-root': {
-                fontWeight: 600,
-                fontSize: '1.0rem',
-                fontFamily: "'Poppins', 'Segoe UI', Arial, sans-serif",
-                color: '#555'
-              },
-              '& .Mui-selected': {
-                color: '#667eea !important'
-              },
-              '& .MuiTabs-indicator': {
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                height: 4,
-                borderRadius: 2
-              }
-            }}
-          >
-            <Tab label="Add Property" {...a11yProps(0)} />
-            <Tab label="All Properties" {...a11yProps(1)} />
-            <Tab label="All Bookings" {...a11yProps(2)} />
-          </Tabs>
-        </Box>
-        <CustomTabPanel value={value} index={0}>
-          <AddProperty />
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}>
-          <AllProperties />
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={2}>
-          <AllBookings />
-        </CustomTabPanel>
-      </Box>
+        <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 2, overflowX: 'auto' }}>
+  <Tabs
+    value={value}
+    onChange={handleChange}
+    aria-label="owner tabs"
+    textColor="primary"
+    indicatorColor="primary"
+    variant="scrollable"
+    scrollButtons="auto"
+    allowScrollButtonsMobile
+    sx={{
+      '& .MuiTabs-flexContainer': {
+        flexWrap: 'nowrap'
+      },
+      '& .MuiTab-root': {
+        fontWeight: 500,
+        fontSize: '0.875rem', // smaller text
+        minWidth: 120, // controls individual tab width
+        padding: '6px 12px',
+        textTransform: 'none',
+        fontFamily: "'Poppins', 'Segoe UI', Arial, sans-serif",
+        color: '#555'
+      },
+      '& .Mui-selected': {
+        color: '#667eea !important'
+      },
+      '& .MuiTabs-indicator': {
+        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        height: 3,
+        borderRadius: 2
+      }
+    }}
+  >
+    <Tab label="Add Property" {...a11yProps(0)} />
+    <Tab label="All Properties" {...a11yProps(1)} />
+    <Tab label="All Bookings" {...a11yProps(2)} />
+  </Tabs>
+</Box>
     </div>
   )
 }
