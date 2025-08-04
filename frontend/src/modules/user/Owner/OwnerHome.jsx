@@ -141,8 +141,8 @@ const OwnerHome = () => {
             indicatorColor="primary"
             sx={{
               '& .MuiTab-root': {
-                fontWeight: 700,
-                fontSize: '1.1rem',
+                fontWeight: 600,
+                fontSize: '1.0rem',
                 fontFamily: "'Poppins', 'Segoe UI', Arial, sans-serif",
                 color: '#555'
               },
